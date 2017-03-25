@@ -1,0 +1,178 @@
+
+body{
+	background:#202020;
+	color:#fff;
+	font:18px/28px 'Raleway', sans-serif;
+	font-weight:300;
+}
+
+/* General  */
+
+
+h1, h2, h3, h4, h5, h6{
+	font-family:'Coustard', sans-serif;
+	margin:0;
+	padding:0;
+	font-weight:300;
+}
+h1{
+	font-size:72px;
+}
+h2{
+	font-size:40px;
+}
+h3{
+	font-size:36px;
+}
+h4{
+	font-size:30px;
+}
+h5{
+	font-size:24px;
+}
+h6{
+	font-size:18px;
+}
+
+
+#name{
+	margin-left:20px;
+}
+
+/* Header  */
+
+#header{
+}
+	.header-overlay{
+		background:rgba(0, 0, 0, 0.6);
+		padding:30px 0;		
+	}
+	 
+.hexagon {
+	background-image: url(logo.png);
+  width: 173px; 
+  height: 173px;
+  margin: 90px auto 140px auto;
+  
+}
+
+
+
+
+
+	
+
+	#header .main-head h2, #header .main-head h4{
+		font-weight:300;
+	}
+	#header .main-head h4{
+		line-height:40px;
+	}
+	
+/* cdn  */	
+	
+	#cdn-area{
+		
+		padding:40px 0;
+		margin:0 0 40px;
+	}
+		ul.cdn{
+			list-style:none;
+			margin:0;
+			padding:0;
+			display:block;
+			text-align:center;
+		}
+			ul.cdn li{
+				display:inline-block;
+				margin:0 20px;
+				padding:0;
+			}
+				ul.cdn li span{
+					font-family:'Coustard', sans-serif;
+					width:100px;
+					display:block;
+					font-size:48px;
+				}
+			ul.cdn li.seperator{
+				font-size:80px;
+				line-height:70px;
+				vertical-align:top;
+			}
+				ul.cdn li p{
+					color: rgba(255,255,255,0.5);
+					font-size: 18px;
+					text-transform:capitalize;
+					margin:0;
+					padding:15px 0 30px 0;
+				}
+				
+
+/* Main Heading Style Starts */
+
+	.main-head{
+		text-align:center;
+		padding:0 0 40px;
+	}
+		.main-head h2, .main-head p{
+		}
+		.main-head h2{
+			padding:0 0 20px;
+		}
+		.main-head p{
+			font-size:24px;
+			line-height:36px;
+		}
+		
+
+/* Services */
+
+
+
+@media (max-width: 767px) {
+
+/* cdn Style Starts */
+
+	ul.cdn li{
+		display:inline-block;
+		margin:5px;
+		padding:0;
+	}
+		ul.cdn li span{
+			width:100px;
+			height:100px;
+			display:block;
+			font-size:48px;
+			font-weight:300;
+			line-height:100px;
+			border:2px solid #fff;
+			-webkit-border-radius:50%;
+			   -moz-border-radius:50%;
+					border-radius:50%;
+		}
+		ul.cdn li p{
+			padding:15px 0;
+		}
+
+/* Contact Style Starts */
+
+	#contact h3, .address, #contact-form .form-group{
+		text-align:center;
+	}
+	#contact-area{
+		padding-bottom:20px;
+	}
+
+/* Footer Style Starts */
+
+	#footer ul.sm-links li a span{
+		width:45px;
+		height:45px;
+		line-height:42px;
+		font-size:20px;
+	}
+	.copyright{
+		font-size:16px;
+	}
+	
+}
