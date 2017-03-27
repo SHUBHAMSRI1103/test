@@ -4,7 +4,7 @@ $(function() {
 	
 	// PreLoader
 	$(window).load(function() {
-		$(".loader").fadeOut(300);
+		$(".loader").fadeOut(100);
 	});
 
 	// Backstretchs
