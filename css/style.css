@@ -1,0 +1,111 @@
+/* ---- reset ---- */
+
+body {
+ 
+  margin: 0;
+  font:normal 75% Arial, Helvetica, sans-serif;
+  
+}
+
+canvas {
+  display: block;
+  vertical-align: bottom;
+}
+
+/* ---- particles.js container ---- */
+
+#particles-js {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  /*background-color: black;*/
+  background-image: url("");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 50% 50%;
+  background-color: black;
+}
+
+.overlay{
+  background-color: rgba(5,1,1,0.5);
+	color: rgba(1,1,1,0.8);
+  border-radius: 5px;
+  box-shadow: 2px 2px 2px rgba(0,0,0,0.2);
+  height:150px;
+  width:450px;
+  position:fixed;
+  top:10%;
+  left:-5%;
+  margin-left:100px;
+  margin-top:150px;
+  
+}
+
+.overlay2{
+  background-color: rgba(5,1,1,0.5);
+	color: rgba(1,1,1,0.8);
+  border-radius: 5px;
+  box-shadow: 2px 2px 2px rgba(0,0,0,0.2);
+  height:250px;
+  width:270px;
+  position:fixed;
+  top:10%;
+  right:10%;
+  margin-right:90px;
+  margin-top:100px;
+  
+}
+
+.linkoverlay{
+	background-color: rgba(5,1,1,0.5);
+	color: rgba(1,1,1,0.8);
+  border-radius: 5px;
+  box-shadow: 2px 2px 2px rgba(0,0,0,0.2);
+  height:80px;
+  width:80px;
+  position:fixed;
+  top:10%;
+  right:10%;
+  margin-right:530px;
+  margin-top:450px;
+}
+
+.copyright{
+	background-color: rgba(5,1,1,0.5);
+	color: rgba(1,1,1,0.8);
+  border-radius: 5px;
+  box-shadow: 2px 2px 2px rgba(0,0,0,0.2);
+  height:20px;
+  width:200px;
+  position:fixed;
+  bottom:2%;
+  left:2%;
+  margin-left:10px;
+  margin-bottom:0px;
+}
+
+.welcome {
+    color: white;
+    display: inline-block;
+    margin-left: 40px;
+    padding-top: 1px;
+    font-size: 60px;
+}
+.menu{
+    color: white;
+    display: inline-block;
+    margin-left: 40px;
+    padding-top: 1px;
+    font-size: 20px;
+}
+
+.cc{
+	color: white;
+    display: inline-block;
+    margin-left: 40px;
+    padding-top: 1px;
+    font-size: 10px;
+}
+
+
+
