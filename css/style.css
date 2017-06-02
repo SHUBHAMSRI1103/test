@@ -107,5 +107,13 @@ canvas {
     font-size: 10px;
 }
 
+a:link{
+	color: white;
+}
+
+a:visited {
+    color: white;
+}
+
 
 
