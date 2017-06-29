@@ -1,0 +1,65 @@
+.overlay{
+  background-color: rgba(1,1,1,0.5);
+	color: rgba(1,1,2,0.8);
+  border-radius: 5px;
+  box-shadow: 2px 2px 2px rgba(0,0,0,0.2);
+  height:900px;
+  width:1000px;
+  position:center;
+  top:50%;
+  left:30%;
+  margin-left:30px;
+  margin-top:150px;
+  margin-bottom:150px;
+}
+.login-overlay{
+  background-color: rgba(5,1,1,0.5);
+	color: rgba(1,1,1,0.8);
+  border-radius: 5px;
+  box-shadow: 2px 2px 2px rgba(0,0,0,0.2);
+  height:350px;
+  width:250px;
+  position:fixed;
+  top:10%;
+  right:-5%;
+  margin-right:100px;
+  margin-top:150px;
+  
+}
+#videodisplay
+{ 
+	width: 100%;
+    height: 60px;
+    margin-top:100px;
+}
+.recovery{
+ font-size: 14px;
+  color:white;
+ margin-top:50px;
+ margin-left: 30px;
+  background-color:transparent;
+  text-decoration:none;
+ 
+  
+}
+form {
+    margin: 0 auto;
+    margin-top: 70px;
+	width:100%
+	height: 69px;
+}
+#lower {
+   
+    width: 100%;
+    height: 60px;
+    margin-top: 17px;
+}
+.headindex{
+	margin-top:100px;
+	color: white;
+	margin-left:100px;
+	font-size:40px;
+	text-shadow: 5px 5px black;
+	font-family:Palatino Linotype;
+	
+}
