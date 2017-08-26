@@ -34,7 +34,7 @@
         <!-- insert the page content here -->
 	      <p>Posted on: 24/08/2017</p>
         <h1>How to Send POST request in Android using Retrofit</h1>
-        <p>We are going to look at an awesome library Retrofit to make the http calls. Retrofit is better then any other library for making http calls in terms of ease of use, performance, extensibility and other things. It is a type-­safe REST client for Android built by Square. Using this tool android developer can make all network stuff much more easier. As an example, we are going to do so.</p>
+        <p>We are going to look at an awesome library Retrofit to make the http calls. Retrofit is better then any other library for making http calls in terms of ease of use, performance, extensibility and other things. It is a type-safe REST client for Android built by Square. Using this tool android developer can make all network stuff much more easier. As an example, we are going to do so.</p>
 		<p>In this tutorial we will try to insert the data to MySQL Database, for this I will be using WAMP Server on my local machine for the database.I will also use php script on the server site for taking the request from the App and and performing things on the server site.</p>
 		<p> Let's start the tutorial Step by Step:</p>
 		<h2>Step 1: Create New Project.</h2>
@@ -48,14 +48,14 @@
 		<h2>Step 2: Adding Dependencies to the Project.</h2>
 		<p>After creating the project we have to add the dependencies to the project build.grade file(Module:app) and synchronise the project.This will download all the necessary files for the retrofit. </p>
 		<img src="rs/Dependencies.JPG">
-		<p>Since, we have to work on network so we have to add permissions in the AndroidMainFest.xml file.</p>
+		<p>Since, we have to work on network so we have to add permissions in the AndroidManiFest.xml file.</p>
 		<img src="rs/Permission.JPG">
 		<h2>Step 3: Create following directory in the project.</h2>
 		<p>(*) project_file/java/com.example.project_name/app/MainActivity.java</p>
 		<p>(*) project_file/java/com.example.project_name/api/RegisterService.java(Interface)</p>
 		<p>(*) project_file/res/layout/activity_main.xml</p>
-		<h2>Step 4: Setting up the AndroidMainFest.xml file for the &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Project.</h2>
-		<p> We have created the file with NoActivity template so it becomes our problem to set the AndroidMainifest file for the layout file.We have to add following to the AndroidMainFest.xml .</p>
+		<h2>Step 4: Setting up the AndroidManiFest.xml file for the &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Project.</h2>
+		<p> We have created the file with NoActivity template so it becomes our problem to set the AndroidManifest file for the layout file.We have to add following to the AndroidManiFest.xml .</p>
 		<img src="rs/androidmainfestadd.JPG">
 		<p>Finally our AndroidManifest.xml file will look like this.</p>
 		<img src="rs/AndroidManiFest.JPG">
