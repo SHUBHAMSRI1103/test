@@ -2,7 +2,7 @@
 <html>
 
 <head>
-  <title>blog</title>
+  <title>How access WAMP or XAMPP in Android Emulator</title>
   <meta name="description" content="website description" />
   <meta name="keywords" content="website keywords, website keywords" />
   <meta http-equiv="content-type" content="text/html; charset=windows-1252" />
@@ -32,76 +32,21 @@
       </div>
       <div id="content">
         <!-- insert the page content here -->
-	      <p>Posted on: 24/08/2017</p>
-        <h1>How to Send POST request in Android using Retrofit</h1>
-        <p>We are going to look at an awesome library Retrofit to make the http calls. Retrofit is better then any other library for making http calls in terms of ease of use, performance, extensibility and other things. It is a type-safe REST client for Android built by Square. Using this tool android developer can make all network stuff much more easier. As an example, we are going to do so.</p>
-		<p>In this tutorial we will try to insert the data to MySQL Database, for this I will be using WAMP Server on my local machine for the database.I will also use php script on the server site for taking the request from the App and and performing things on the server site.</p>
-		<p> Let's start the tutorial Step by Step:</p>
-		<h2>Step 1: Create New Project.</h2>
-		<p>In the first step, launch Android Studio and select Create New Project.</p>
-		<img src="rs/CreateNewProject.JPG" height="300" width="450">
-		<p>Then we have to select the SDK for the device on which your App is going to run.</p>
-		<img src="rs/SDKSelect.JPG" height="300" width="450">
-		<p>Then we have to select the Activity template, for this tutorial I'm selecting NO ATIVITY</p>
-		<img src="rs/Activity.JPG" height="300" width="450">
-		<p>Now, hit the Finish button and your project file is ready.</p>
-		<h2>Step 2: Adding Dependencies to the Project.</h2>
-		<p>After creating the project we have to add the dependencies to the project build.grade file(Module:app) and synchronise the project.This will download all the necessary files for the retrofit. </p>
-		<img src="rs/Dependencies.JPG">
-		<p>Since, we have to work on network so we have to add permissions in the AndroidManiFest.xml file.</p>
-		<img src="rs/Permission.JPG">
-		<h2>Step 3: Create following directory in the project.</h2>
-		<p>(*) project_file/java/com.example.project_name/app/MainActivity.java</p>
-		<p>(*) project_file/java/com.example.project_name/api/RegisterService.java(Interface)</p>
-		<p>(*) project_file/res/layout/activity_main.xml</p>
-		<h2>Step 4: Setting up the AndroidManiFest.xml file for the &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Project.</h2>
-		<p> We have created the file with NoActivity template so it becomes our problem to set the AndroidManifest file for the layout file.We have to add following to the AndroidManiFest.xml .</p>
-		<img src="rs/androidmainfestadd.JPG">
-		<p>Finally our AndroidManifest.xml file will look like this.</p>
-		<img src="rs/AndroidManiFest.JPG">
-		<h2>Step 5: Setting layout.</h2>
-		<p>Starting with the general format to create a layout, insert this to activity_main.xml . </p>
-		<img src="rs/layout1.JPG" >
-		<p>Now, we need text boxes for entering data by the user. Insert the following between the RelativeLayout tag.</p>
-		<img src="rs/layout2.JPG" >
-		<p>&nbsp </p>
-		<img src="rs/layout3.JPG" >
-		<p>After inserting the following code you will get the layout as shown in the snapshot.You can ignore the "KooK" label in this snap, that was my project name in your layout your project name will appear.</p>
-		<img src="rs/layout4.JPG" >
-		<h2>Step 6: Setting MainActivity.</h2>
-		<p>First create the class MainActivity in MainActivity.java file.</p>
-		<img src="rs/MainActivity1.JPG" >
-		<p>Now, create the onCreate method which will be responsible for interaction with the layout</p>
-		<img src="rs/MainActivity2.JPG" >
-		<p> Next will be the signIn method which will be responsible for taking entries from the layout and changing it to a string variable which can be used.</p>
-		<img src="rs/MainActivity3.JPG" >
-		<p>You can ignore the errors right now it will be fixed after the completion.</p>
-		<p>After getting the entry you have to make connection with the server and send the data to the server. For this, write this code to the else condition block.</p>
-		<img src="rs/MainActivity4.JPG" >
-		<p> For handling the failure we have to write this also.</p>
-		<img src="rs/MainActivity5.JPG" >
-		<p>Now u will need to make a variable for the URL that will contain the the Ip address or the server link. In my case im using my machine for the wamp server so the Ip will be my machine Ip but not the local host IP, to understand why not local host you can check my <a href="http://projec-tech.com/Tutorials/Tut_Content/Tutorial2.html">this tutorial</a>.</p>
-		<img src="rs/MainActivity6.JPG" >
-		<p> the final imports for MainActivity will be: </p>
-		<img src="rs/MainActivity7.JPG" >
-		<h2>Step 7: Setting the API file.</h2>
-		<p> This file will be responsible for making Calls and response to and from the server. </p>
-		<img src="rs/API.JPG" >
-		<h2>Step 8: Setting the Database.</h2>
-		<p>Fire the wamp server and go to phpMyAdmin.Their you will get an option Database, select it and create a database.I have made with the name of kukdu_ku.</p>
-		<img src="rs/server1.JPG" >
-		<p>Now you have to create a table inside you database, like i have created with the name login_tb which contains 3 columns.</p>
-		<img src="rs/server2.JPG" >
-		<p>username is the primary key in the table</p>
-		<p>Enter some data to run the test and we are done withe database.</p>
-		<h2>Step 9: Setting the server site with php</h2>
-		<p>First go to the directory where you have installed the wamp server, then in that you have to look for folder with name "www".</p>
-		<p>Create a folder with name "text" and two files within it with name "insert.php" & "db_conn.php".</p>
-		<p>The db_conn.php file will contain the connection part with database  MySQL.</p>
-		<img src="rs/server3.JPG" >
-		<p>The insert.php will be responsible for taking data from app and inserting it to the database.</p>
-		<img src="rs/server4.JPG" >
-		<p>And you have created an app which can insert the data.</p>
+        <h1>How access WAMP or XAMPP in Android Emulator.</h1>
+        <p>This was the problem I had when I was learning to connect my android app with my localhost, So I thought it worth sharing that how I solved this problem.Anyone who is developing an internet based app need to check his app is working fine or not, for which we use Localhost because each time setting up an online server would be typical as uploading all the scripts then managing it.So, the best way is having a WAMP or XAMPP server running on your PC.</p> 
+		<p>The first question arises in our mind is "What is the big deal it is localhost and my android emulator is running on my PC so I can access that by IP-->127.0.0.1" but no we can not, it doesn't work this way.Your emulator doesn't know what Localhost is, and what this ip 127.0.0.1 pointing to.
+		<p>So, here is the full step by step process to connect you android app with WAMP or XAMPP more to that this not only applicable to you emulator but to your mobile device also.By this you can develop your app and use it in you local area just by accesing your PC locally.</p>
+		<p>1.Open Command Prompt and type --> ipconfig.</p>
+		<img src="rs/t2_1.JPG" >
+		<p>2.Now copy IPv4 Address, we need that</p>
+		<p>3.Start your WAMP server.</p>
+		<p>4.Start your Android Emulator.</p>
+		<p>5.Now if you have started your android emulator then open a browser and try to aceess your local host by typing "127.0.0.1" in the address bar, then you will get:</p>
+		<img src="rs/t2_2.JPG">
+		<p>Therefore, we can't access by our well known IP for Localhost.Now try the IP which you have copied from Command Prompt.</p>
+		<img src="rs/t2_3.JPG">
+		<p> And we got it.</p>
+		<p>You can use this IP as server name in your for running them locally on you device or emulator.</p>
 	  </div>
     </div>
 	</div>
