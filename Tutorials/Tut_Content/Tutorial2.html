@@ -1,0 +1,58 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+  <title>How access WAMP or XAMPP in Android Emulator</title>
+  <meta name="description" content="website description" />
+  <meta name="keywords" content="website keywords, website keywords" />
+  <meta http-equiv="content-type" content="text/html; charset=windows-1252" />
+  <link href="style/loader.ico" rel="shortcut icon" />
+  <link rel="stylesheet" type="text/css" href="style/style.css" title="style" />
+</head>
+
+<body>
+  <div id="main">
+    <div id="header">
+      <div id="logo">
+        <div id="logo_text">
+          <!-- class="logo_colour", allows you to change the colour of the text -->
+          <h1><a href="http://projec-tech.com/">projec<span class="logo_colour">TECH</span></a></h1>
+        </div>
+      </div>
+    </div>
+    <div id="site_content">
+      <div class="sidebar">
+        <!-- insert your sidebar items here -->
+        <h2>Useful Links</h2>
+        <ul>
+          <li><a href="https://developer.android.com/studio/index.html">Android Studio</a></li>
+          <li><a href="http://square.github.io/retrofit/">Retrofit</a></li>
+		  <li><a href="http://www.wampserver.com/">Wamp Server</a></li>
+        </ul>
+      </div>
+      <div id="content">
+        <!-- insert the page content here -->
+        <h1>How access WAMP or XAMPP in Android Emulator.</h1>
+        <p>This was the problem I had when I was learning to connect my android app with my localhost, So I thought it worth sharing that how I solved this problem.Anyone who is developing an internet based app need to check his app is working fine or not, for which we use Localhost because each time setting up an online server would be typical as uploading all the scripts then managing it.So, the best way is having a WAMP or XAMPP server running on your PC.</p> 
+		<p>The first question arises in our mind is "What is the big deal it is localhost and my android emulator is running on my PC so I can access that by IP-->127.0.0.1" but no we can not, it doesn't work this way.Your emulator doesn't know what Localhost is, and what this ip 127.0.0.1 pointing to.
+		<p>So, here is the full step by step process to connect you android app with WAMP or XAMPP more to that this not only applicable to you emulator but to your mobile device also.By this you can develop your app and use it in you local area just by accesing your PC locally.</p>
+		<p>1.Open Command Prompt and type --> ipconfig.</p>
+		<img src="rs/t2_1.JPG" >
+		<p>2.Now copy IPv4 Address, we need that</p>
+		<p>3.Start your WAMP server.</p>
+		<p>4.Start your Android Emulator.</p>
+		<p>5.Now if you have started your android emulator then open a browser and try to aceess your local host by typing "127.0.0.1" in the address bar, then you will get:</p>
+		<img src="rs/t2_2.JPG">
+		<p>Therefore, we can't access by our well known IP for Localhost.Now try the IP which you have copied from Command Prompt.</p>
+		<img src="rs/t2_3.JPG">
+		<p> And we got it.</p>
+		<p>You can use this IP as server name in your for running them locally on you device or emulator.</p>
+	  </div>
+    </div>
+	</div>
+    <div id="footer">
+      <p>&copy; 2017 projec-tech.com</p>
+    </div>
+  
+</body>
+</html>
