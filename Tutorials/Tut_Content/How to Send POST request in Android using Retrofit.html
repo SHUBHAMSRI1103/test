@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="projecTECH" content="How to Send POST request in Android using Retrofit.">
+    <title>projecTECH|How to Send POST request in Android using Retrofit.</title>
+    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <link rel="stylesheet" href="assets/css/untitled.css">
+</head>
+
+<body id="back">
+    <p id="logo">projecTECH </p>
+    <div>
+        <h1 id="posted_date">Posted on: 24/08/2017 </h1>
+        <div>
+            <div class="jumbotron" id="usefullinks">
+                <h2 class="text-justify" id="linksuse">Useful links</h2>
+                <p><a href="https://developer.android.com/studio/index.html"><span style="text-decoration: underline;">Android Studio</span></a> </p>
+                <p><a href="http://square.github.io/retrofit/"><span style="text-decoration: underline;">Retrofit</span></a> </p>
+                <p><a href="http://www.wampserver.com/"><span style="text-decoration: underline;">Wamp Server</span></a> </p>
+            </div>
+            <div class="jumbotron" id="content">
+                <h1 id="content_heading">How to Send POST request in Android using Retrofit. </h1>
+                <p id="content_para"> We are going to look at an awesome library Retrofit to make the http calls. Retrofit is better then any other library for making http calls in terms of ease of use, performance, extensibility and other things. It is a type-safe REST client
+                    for Android built by Square. Using this tool android developer can make all network stuff much more easier. As an example, we are going to do so. </p>
+                <p id="content_para2">In this tutorial we will try to insert the data to MySQL Database, for this I will be using WAMP Server on my local machine for the database.I will also use php script on the server site for taking the request from the App and and performing
+                    things on the server site. </p>
+                <p id="content_para3">Let's start the tutorial Step by Step: </p>
+                <h1 id="steps">Step 1: Create New Project. </h1>
+                <p id="content_para4">In the first step, launch Android Studio and select Create New Project. </p><img src="assets/img/CreateNewProject.JPG" width="500" id="img_1">
+                <p id="para_top">Then we have to select the SDK for the device on which your App is going to run. </p><img src="assets/img/SDKSelect.JPG" width="500">
+                <p id="content_para5">Then we have to select the Activity template, for this tutorial I'm selecting NO ATIVITY </p><img src="assets/img/Activity.JPG" width="500">
+                <p id="content_para6">Now, hit the Finish button and your project file is ready. </p>
+                <h1 id="stepss">Step 2: Adding Dependencies to the Project. </h1>
+                <p id="content_para7">After creating the project we have to add the dependencies to the project build.grade file(Module:app) and synchronise the project.This will download all the necessary files for the retrofit. </p><img src="assets/img/Dependencies.JPG" width="500">
+                <p
+                id="content_para8">Since, we have to work on network so we have to add permissions in the AndroidManiFest.xml file. </p><img src="assets/img/Permission.JPG" width="500">
+                    <h1 id="stepsss">Step 3: Create following directory in the project. </h1>
+                    <p id="content_para9">(*) project_file/java/com.example.project_name/app/ManiActivity.java </p>
+                    <p id="content_para10">(*) project_file/java/com.example.project_name/api/RegisterService.java(Interface) </p>
+                    <p id="content_para11">(*) project_file/res/layout/activity_main.xml </p>
+                    <h1 id="step12">Step 4: Setting up the AndroidManiFest.xml file for the Project. </h1>
+                    <p id="para_1">We have created the file with NoActivity template so it becomes our problem to set the AndroidMainifest file for the layout file.We have to add following to the AndroidManiFest.xml. </p><img src="assets/img/androidmainfestadd.JPG" width="500">
+                    <p id="para_122">Finally our AndroidManifest.xml file will look like this. </p>
+                    <h1 id="step5">Step 5: Setting layout. </h1>
+                    <p id="parast5">Starting with the general format to create a layout, insert this to activity_main.xml . </p><img src="assets/img/layout1.JPG" width="500">
+                    <p id="parast52">Now, we need text boxes for entering data by the user. Insert the following between the RelativeLayout tag. </p><img src="assets/img/layout2.JPG" width="500"><img src="assets/img/layout3.JPG" width="500">
+                    <p id="paralayout">After inserting the following code you will get the layout as shown in the snapshot.You can ignore the "KooK" label in this snap, that was my project name in your layout your project name will appear. </p><img src="assets/img/layout4.JPG">
+                    <h1
+                    id="step6">Step 6: Setting MainActivity. </h1>
+                        <p id="parast6">First create the class MainActivity in MainActivity.java file. </p><img src="assets/img/MainActivity1.JPG" width="500">
+                        <p id="paraactiv1">Now, create the onCreate method which will be responsible for interaction with the layout </p><img src="assets/img/MainActivity2.JPG" width="500">
+                        <p id="paraactiv2">Next will be the signIn method which will be responsible for taking entries from the layout and changing it to a string variable which can be used. </p><img src="assets/img/MainActivity3.JPG" width="700">
+                        <p id="paraactiv3">You can ignore the errors right now it will be fixed after the completion.After getting the entry you have to make connection with the server and send the data to the server. For this, write this code to the else condition block.
+                            </p><img src="assets/img/MainActivity4.JPG">
+                        <p id="paraactiv4">For handling the failure we have to write this also. </p><img src="assets/img/MainActivity5.JPG">
+                        <p id="paraativ5">Now u will need to make a variable for the URL that will contain the the Ip address or the server link. In my case im using my machine for the wamp server so the Ip will be my machine Ip but not the local host IP, to understand
+                            why not local host you can check my&nbsp;<a href="http://projec-tech.com/Tutorials/Tut_Content/Tutorial2.html"><span style="text-decoration: underline;">this tutorial</span></a>. </p><img src="assets/img/MainActivity6.JPG">
+                        <p id="paraactiv6">the final imports for MainActivity will be: </p><img src="assets/img/MainActivity7.JPG">
+                        <h1 id="step7">Step 7: Setting the API file. </h1>
+                        <p id="parast7">This file will be responsible for making Calls and response to and from the server. </p><img src="assets/img/api.JPG">
+                        <h1 id="step8">Step 8: Setting the Database. </h1>
+                        <p id="parast8">Fire the wamp server and go to phpMyAdmin.Their you will get an option Database, select it and create a database.I have made with the name of kukdu_ku. </p><img src="assets/img/server1.JPG">
+                        <p id="server1">Now you have to create a table inside you database, like i have created with the name login_tb which contains 3 columns. </p><img src="assets/img/server2.JPG" width="700">
+                        <p id="server2">username is the primary key in the table </p>
+                        <p id="server2-1">Enter some data to run the test and we are done withe database. </p>
+                        <h1 id="step9">Step 9: Setting the server site with php </h1>
+                        <p id="parast9">First go to the directory where you have installed the wamp server, then in that you have to look for folder with name "www". </p>
+                        <p id="parast92">Create a folder with name "text" and two files within it with name "insert.php" &amp; "db_conn.php". </p>
+                        <p id="parast93">The db_conn.php file will contain the connection part with database MySQL. </p><img src="assets/img/server3.JPG" width="500">
+                        <p id="paraserver2">The insert.php will be responsible for taking data from app and inserting it to the database. </p><img src="assets/img/server4.JPG">
+                        <p id="paraend">And you have created an app which can insert the data. </p>
+            </div>
+        </div>
+    </div>
+    <div>
+        <p id="footer">© 2017 projec-tech.com </p>
+    </div>
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+</body>
+
+</html>
